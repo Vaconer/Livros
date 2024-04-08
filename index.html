@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Site livros</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(Black, rgb(18, 18, 18), Black);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .content {
+            height: 400px;
+            width: 1200px;
+            border-radius: 2px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 5px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+        .content .slide img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content .slide .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .navegation {
+            display: flex;
+        }
+
+        .navigation-radio {
+            position: absolute;
+            bottom: 130px;
+            left: 47%;
+            display: flex;
+        }
+
+        .bar {
+            width: 8.5px;
+            height: 8.5px;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 6px;
+            border-radius: 15px;
+            cursor: pointer;
+            transform: .5s ease;
+        }
+
+        .bar:hover {
+            background-color: #5c049c;
+        }
+
+        input {
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            width: 500%;
+            height: 100%;
+        }
+
+        .slide {
+            width: 20%;
+            transition: .6s;
+            position: relative;
+        }
+
+        #slide1:checked~.s1 {
+            margin-left: 0;
+        }
+
+        #slide2:checked~.s1 {
+            margin-left: -20%;
+        }
+
+        #slide3:checked~.s1 {
+            margin-left: -40%;
+        }
+
+        #slide4:checked~.s1 {
+            margin-left: -60%;
+        }
+
+        #slide5:checked~.s1 {
+            margin-left: -80%;
+        }
+
+
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-300%);
+            color: rgb(236, 236, 236);
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        .sinopse-overlay {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            width: 45%;
+            transform: translateY(-30%);
+            color: rgb(225, 225, 225);
+            font-size: 17px;
+            font-weight: bold;
+            text-align: left;
+            text-align: justify;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: rgb(216, 216, 216);
+            font-family: "Arial Black", sans-serif;
+            line-height: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            white-space: nowrap;
+        }
+
+        .genero-overlay {
+            position: absolute;
+            top: calc(50% - 80px);
+            left: 5%;
+            color: rgb(236, 236, 236);
+            font-size: 13px;
+            font-weight: bold;
+            text-align: left;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #290543b1, #5905a2b0, #190429c1);
+            height: 80px;
+        }
+
+        .navigation ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation ul li {
+            margin-right: 20px;
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .navigation ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            SITE MANGÁS
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+
+        <div class="slides">
+
+            <input class="input" type="radio" name="slide" id="slide1" checked>
+            <input class="input" type="radio" name="slide" id="slide2">
+            <input class="input" type="radio" name="slide" id="slide3">
+
+
+            <div class="slide s1">
+                <div class="text-overlay">Solo Leveling</div>
+
+                <div class="genero-overlay">Ação, fantasia - 2014</div>
+
+                <div class="sinopse-overlay">Sung Jinwoo (Aleks Le) é um simples caçador sem habilidades ou
+                    forças notáveis, mas um dia, após sobreviver a uma batalha que quase o levou à morte...</div>
+
+                <a href="solo-leveling.html">
+                    <img src="./img/1.jpg" alt="">
+                </a>
+
+            </div>
+
+            <div class="slide">
+                <div class="text-overlay">The Beggining after the end</div>
+
+                <div class="genero-overlay">Ação, Aventura - 2018</div>
+
+                <div class="sinopse-overlay">O rei Gray é um governante notável com um reinado próspero, mas,
+                    no entanto... a opulência e o sucesso não podem enterrar o vazio e a solidão...</div>
+
+                <a href="the-beggining-after-the-end.html">
+                    <img src="./img/2.jpg" alt="">
+                </a>
+
+            </div>
+
+            <div class="slide">
+                <div class="text-overlay">The God of High School</div>
+
+                <div class="genero-overlay">Ação, Comédia - 2011</div>
+
+                <div class="sinopse-overlay">Enquanto uma ilha desaparece pela metade da face do planeta,
+                    uma organização misteriosa está enviando convites para cada lutador habilidoso da Terra
+                    para participarem de um torneio...</div>
+
+                <a href="the-god-of-high-school.html">
+                    <img src="./img/3.jpg" alt="">
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navigation-radio">
+
+        <label class="bar" for="slide1"></label>
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
