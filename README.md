@@ -6,7 +6,7 @@ Bem-vindo ao repositório do Site Mangás! Este projeto é um site para ver info
 
 O Site Mangás é uma plataforma que oferece uma experiência imersiva de apresentação diretamente no seu navegador com um design atrativo e um sistema de navegação intuitivo.
 
-<img src="https://s1.ezgif.com/tmp/ezgif-1-4a1684f963.gif" alt="Mangás" width="500" heigh='400' style="border-radius: 10px;">
+![ezgif-2-e3985f13e1](https://github.com/Vaconer/Vaconer/assets/106969683/199bcec9-f283-40eb-9ac0-5af61229c3c4)
 
 [Site Mangás](https://vaconer.github.io/Livros/)
 
