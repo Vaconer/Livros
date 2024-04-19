@@ -6,6 +6,8 @@ Bem-vindo ao repositório do Site Mangás! Este projeto é um site para ver info
 
 O Site Mangás é uma plataforma que oferece uma experiência imersiva de apresentação diretamente no seu navegador com um design atrativo e um sistema de navegação intuitivo.
 
+<img src="https://s1.ezgif.com/tmp/ezgif-1-4a1684f963.gif" alt="Mangás" width="500" heigh='400' style="border-radius: 10px;">
+
 ## Funcionalidades Principais
 
 - **Slider de Mangás**: Permite aos usuários navegar entre diferentes mangás com facilidade, proporcionando uma experiência contínua de leitura.
