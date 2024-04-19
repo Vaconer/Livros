@@ -14,7 +14,7 @@ O Site Mangás é uma plataforma que oferece uma experiência imersiva de aprese
 ## Mangás Disponíveis
 
 1. **Solo Leveling**
-2. **The Beggining After The End*
+2. **The Beggining After The End**
 3. **Tower of God**
 
 ## Como Executar o Projeto
